@@ -1,3 +1,3 @@
-# Computer Society Of India LNMIIT
+# Computer Society Of India JUET
 
-website of CSI LNMIIT Student Chapter 
+website of CSI JUET Student Chapter 
