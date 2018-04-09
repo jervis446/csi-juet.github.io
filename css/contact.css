@@ -1,0 +1,125 @@
+body{
+	overflow-x: hidden;
+	background-color: #fff;
+}
+.wrapper{
+	z-index: 5;
+	position: relative;
+	background-color: #f9f9f9;
+	left: 60px;
+	margin-left: 0px;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+@media (orientation:portrait)
+{
+	.wrapper{left: 0px;}
+	.wrapper .content{background-color: rgba(42, 196, 234, 0.3);}
+	.wrapper{left:0px;}
+	.slide-right{left:300px;}
+}
+@media (orientation:landscape)
+{
+	.wrapper{left: 0px;}
+	.wrapper .content{background-color: rgba(42, 196, 234, 0.3);}
+	.wrapper{left:60px;}
+	.slide-right{left:260px;}
+}
+.wrapper .container{
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	width: 100%;
+}
+
+.wrapper .container .row{
+	margin:0;
+}
+.wrapper .container .title{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Raleway","MontserratRegular";
+	color: #333;
+	padding: 20px 0px;
+	text-align: center;
+	color: #fff;
+}
+@media(orientation:portrait)
+{
+	.wrapper .container .title{
+		font-size: 3em;		
+	}
+}
+.wrapper .title{
+	background: rgb(228, 241, 254);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+}
+.wrapper .container .row .col-md-4,.col-sm-12,.col-md-12,
+.col-md-6,.col-xs-12,.col-sm-6{padding:0;}
+
+@media(orientation:portrait)
+{
+	.map{
+		pointer-events: none;
+	}
+	#google-map{
+		height: 100vh;
+	}
+}
+
+.pointer-event{
+	pointer-events: auto;
+}
+
+.wrapper .container .contact-box{
+	margin: 50px 0px;
+}
+
+.wrapper .contact-box .card{
+	height: 200px;
+}
+
+@media(orientation:portrait)
+{
+	.wrapper .contact-box .card{
+		height: 400px;
+		margin: 20px 0px;
+	}
+}
+
+.wrapper .contact-box .card .box{
+	width: 90%;
+	height: 90%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	box-shadow: 0px 0px 5px grey;
+}
+.wrapper .contact-box .card .box div{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@media (orientation:landscape)
+{
+	.name,.no,.email{
+		font-size: 1.2em;
+	}
+}
+@media (orientation:portrait)
+{
+	.name,.no,.email{
+		font-size: 2.5em;
+	}
+}

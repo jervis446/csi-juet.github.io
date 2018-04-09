@@ -1,0 +1,283 @@
+body{overflow-x: hidden;}
+a, a:hover, a:focus{text-decoration: none;}
+a:focus {outline: none;}
+
+/*	Main Content Style	*/
+
+.wrapper{
+	position: fixed;
+	left: 0px;
+	z-index: 5;
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+
+.wrapper .container{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.wrapper .container .row{
+	margin:0;
+	text-align: center;
+	height: 100%;
+}
+
+.wrapper .container .row .col-md-4,.col-sm-12,.col-md-12{padding:0;}
+
+.wrapper .content{
+	padding: 0;
+	height: 100%;
+	background-color: rgba(42, 196, 234, 0.7);
+}
+
+.slide-right{left:200px;}
+
+.csi-image{margin: 30px 0px;}
+
+.csi-image img{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@media (orientation:portrait)
+{
+	.csi-image img{
+		position: relative;
+		width: 50vw;
+		height: 50vw;
+	}
+}
+.force-hv-center{
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.wrapper .container .row .content .btn-group-lg .btn{
+	border-radius: 0px;
+	color:rgb(42, 196, 234);
+	background-color: #fff;
+	border:0;
+	margin: 20px 10px;
+	padding: 10px 0px;
+	min-width: 1000px
+}
+@media (orientation:landscape)
+{
+	.landing-text{
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family:"Raleway","MontserratRegular";
+		/*font-weight: bold;*/
+		color: #fff;
+	}
+
+	.landing-text-2{
+		font-size: 16px;
+		font-family:"Raleway","MontserratRegular";
+		color: #fff;
+	}
+	.wrapper .container .row .content .btn-group-lg .btn{
+		border-radius: 0px;
+		color:rgb(42, 196, 234);
+		background-color: #fff;
+		border:0;
+		margin: 20px 10px;
+		padding: 10px 0px;
+		font-size: 1.2em;
+		min-width: 100px
+	}
+}
+@media (orientation:portrait)
+{	
+	.landing-text{
+		font-size: 4em;
+		text-transform: uppercase;
+		font-family:"Raleway","MontserratRegular";
+		color: #fff;
+	}
+
+	.landing-text-2{
+		font-size: 3em;
+		font-family:"Raleway","MontserratRegular";
+		color: #fff;
+	}
+	.wrapper .container .row .content .btn-group-lg .btn{
+		border-radius: 0px;
+		color:rgb(42, 196, 234);
+		background-color: #fff;
+		border:0;
+		margin: 50px 10px;
+		padding: 20px 0px;
+		font-size: 2.2em;
+		min-width: 300px;
+	}
+}
+@media (min-width: 480px) and (orientation:landscape)
+{
+	.landing-text{font-size: 26px;}
+	.landing-text-2{font-size: 22px;}
+}
+
+@media (min-width: 600px) and (orientation:landscape)
+{
+	.landing-text{font-size: 30px;}
+	.landing-text-2{font-size: 26px;}
+}
+
+@media (min-width: 800px) and (orientation:landscape)
+{
+	.landing-text{font-size: 34px;}
+	.landing-text-2{font-size: 28px;}
+}
+
+@media (min-width: 1200px) and (orientation:landscape)
+{
+	.landing-text{font-size: 40px;}
+	.landing-text-2{font-size: 32px;}
+}
+.content-shift{left: 200px;}
+
+/*	Main Content End*/
+/*	Background Style*/
+
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.bg-img1, .bg-img2, .bg-img3, .bg-img4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url("../resources/pattern04.png");
+	background-size: fill;
+}
+
+@media (orientation:landscape){
+
+	.wrapper .content{background-color: rgba(42, 196, 234, 0.8);}
+	
+	.bg-img2{
+		z-index: -2;
+		background-image: url("../resources/bg6.2.jpg");
+		background-size: cover;
+		animation: faded 10s linear 0s infinite;
+	}
+	.bg-img3{
+		z-index: -3;
+		background-image: url("../resources/bg8.2.jpg");
+		background-size: cover;
+		animation: faded 10s linear 5s infinite;
+	}
+	.bg-img4{
+		z-index: -4;
+		background-image: url("../resources/bg9.2.jpg");
+		background-size: cover;
+		animation: faded 10s linear 10s infinite;
+	}
+}
+
+@keyframes faded{
+	0% { opacity: 1; }
+	33% { opacity: 1; }
+	40% { opacity: 0; }
+	92% { opacity: 0; }
+	100% { opacity: 1; }
+}
+/*	Background End */
+
+.launch{
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	top: 0px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+.wrap{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.wrap #csi{
+	font-size: 3em;	
+	font-family:"Raleway","MontserratRegular";
+	line-height: 80px;
+}
+.wrap #lnmiit{
+	font-size: 2em;	
+	font-family:"Raleway","MontserratRegular";
+	line-height: 80px;
+}
+.wrap .text-wrap{
+	position: relative;
+	height: 150px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 1.5em;
+	overflow-x: hidden;
+}
+.wrap .text-wrap .text-wrap-text{
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	color: cornflowerblue;
+	line-height: 150px;
+}
+.launch button{
+	position: relative;
+	padding: 10px 30px;
+	font-size: 2em;
+	font-family:"Raleway","MontserratRegular";
+	background-color: rgb(25, 181, 254);
+	border-bottom: 5px solid rgb(34, 167, 240);
+	border-radius: 5px;
+	color: #f9f9f9;
+	text-shadow: 1px 1px 3px rgb(34, 167, 240);
+}
+
+#t1{
+	z-index: 3;
+	animation: faded 15s linear 0s infinite;
+}
+#t2{
+	z-index: 2;
+	animation: faded 15s linear 5s infinite;
+}
+#t3{
+	z-index: 1;
+	animation: faded 15s linear 10s infinite;
+}

@@ -1,0 +1,252 @@
+body{
+	overflow-x: hidden;
+	background-color: #f9f9f9;
+}
+.wrapper{
+	z-index: 5;
+	position: relative;
+	left: 0;
+	margin-left: 60px;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+@media (orientation:portrait){
+	.wrapper{
+		margin-left: 0px;
+	}
+}
+.wrapper a,a:focus,a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+.wrapper .container{
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	width: 100%;
+}
+
+.wrapper .container .row{
+	margin:0;
+	overflow-x: hidden;
+}
+
+.wrapper .landing{
+	background-size: repeat;
+}
+
+.wrapper .container .row .col-md-4,.col-sm-12,.col-md-12,
+.col-md-6,.col-xs-12,.col-sm-6{padding:0;}
+
+.wrapper .content{
+	padding: 0;
+	background: rgb(228, 241, 254);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	background: linear-gradient(141deg, rgba(15,184,173,0.85) 0%, rgba(31,200,219,0.9) 51%, rgba(44,181,232,0.95) 75%);
+	overflow-y: hidden;
+}
+
+.slide-right{left:200px;}
+
+.wrapper .content .info{
+	position: relative;
+	font-size: 60px;
+	font-family: "MontserratRegular";
+	color: #fff;
+	text-align: center;
+	height: 100px;
+}
+
+.wrapper .content .title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 24px;
+}
+
+.wrapper .container .pics-box{
+	margin-left: 0px;
+	background-color: #f9f9f9;
+}
+@media (max-width: 800px) and (orientation:portrait)
+{
+	#trigger{
+		background: transparent url('../resources/burger.png') center 20px no-repeat;
+		box-shadow: none;
+	}
+	#sb-title{display: none;}
+	.wrapper{left: 0px;}
+	.wrapper .content{background-color: rgba(42, 196, 234, 0.3);}
+}
+@media (max-width: 800px)
+{
+	.wrapper .container .pics-box{margin-left: 0px;}
+}
+@media (width: 800px)
+{
+	.wrapper .container .pics-box{margin-left: 0px;}
+}
+
+.picture,.picture-info{
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+}
+.picture-info{
+	height: 450px;
+	font-style: "Raleway","MontserratRegular";
+	font-size: 20px;
+	padding: 20px;
+}
+@media (min-width: 768px) and (orientation:portrait)
+{
+	.picture-info{
+		font-size: 28px;
+	}
+}
+.picture-info span{
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+@media (min-width: 480px)
+{
+	.picture,.picture-info{height: 350px;}
+}
+@media (min-width: 600px)
+{
+	.picture,.picture-info{height: 400px;}
+}
+@media (min-width: 768px)
+{
+	.picture,.picture-info{height: 0px;}
+}
+@media (min-width: 930px)
+{
+	.picture,.picture-info{height: 450px;}
+}
+@media (min-width: 992px)
+{
+	.picture,.picture-info{height: 270px;}
+}
+@media (min-width: 1200px)
+{
+	.picture,.picture-info{height: 310px;}
+}
+@media (min-width: 1366px)
+{
+	.picture,.picture-info{height: 370px;}
+}
+@media (min-width: 1600px)
+{
+	.picture,.picture-info{height: 450px;}
+}
+
+*::after,*::before{
+	display: border-box;
+}
+
+.picture .card{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.picture .card:hover{
+	box-shadow: 0px 0px 2px #999;
+}
+.card-image::after{
+	content: " ";
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 0;
+	max-width: 0;
+	border-radius: 50%;
+	background-color: rgba(42, 196, 234,0.5);
+	background-image: url("../resources/zoom.png");
+	background-repeat: no-repeat;
+    background-position:center center;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+
+.card-image:hover:after{
+	max-height: 80%; 
+	max-width: 80%; 
+	border-radius: 0;
+}
+
+.card-image{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.picture .card img{
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+	width: 80%;
+	height: 80%;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0px 0px 3px #333;
+	-webkit-transition: all .1s ease;
+	   -moz-transition: all .1s ease;
+		-ms-transition: all .1s ease;
+		 -o-transition: all .1s ease;
+			transition: all .1s ease;
+}
+
+.image-viewer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10,10,10,0.5);
+	z-index: 100;
+	display: none;
+}
+.image-viewer .image{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.image-viewer .image img{
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0px 0px 5px #333;
+	border-radius: 5px;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 300px;
+	min-width: 300px;
+}

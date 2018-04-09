@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact - CSI JUET Student Chapter</title>
+	<link rel="shortcut icon" href="../resources/csi-favicon.png"  />
+	<meta name="description" content="Computer Society Of India JUET Student Chapter" />
+	<meta name="keywords" content="csi JUET, csi, JUET, Computer Society Of India, Jaypee University of Engineering and Technology, About, About Us, CSI-JUET, csi about" />
+	<meta name="author" content="Shashwat Dixit" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+  	
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../fonts/fonts.css">	
+</head>
+<body>
+	<nav class="sidebar">
+		<div class="sb-content">
+			<div id="logo" class="text-center"><img alt="[ CSI JUET ]" title="" src="../resources/csi-logo-rr.png"/></div>
+			<a href="../index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+			<a href="../about/index.html"><span class="glyphicon glyphicon-user"></span>About</a>
+			<a href="../events/index.html"><span class="glyphicon glyphicon-calendar"></span>Events</a>
+			<a class="active" href="#"><span class="glyphicon glyphicon-envelope"></span>Contacts</a>
+			<a href="../dev.html"><span class="glyphicon glyphicon-user"></span>Developers</a>
+			<a href="http://csi-india.org" target="_blank"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
+			<span class="copyright">&copy; CSI JUET 2017-18</span>
+			<a class="fb" href="https://www.facebook.com/CSIJaypee/" target="_blank"><img src="../resources/facebook.png"></a>
+		</div>
+		<div id="trigger">
+			<p id="sb-title">csi-JUET</p>
+			<div id="trigger-image">
+				<img src="../resources/burger.png">
+			</div>
+		</div>
+	</nav>
+
+	<div class="wrapper">
+		<div class="container">
+		    <div class="row"><div class="title col-sm-12 col-md-12">Contact Us</div></div>
+			<div class="map row"">
+				<iframe class="col-xs-12" id="google-map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJn9a6uzr_ejkRmVM5W4aq8po&key=AIzaSyC3hDChbxfysAGcOw1bK5p_AvTalqHFB14"
+				 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="row contact-box">
+				<div class="row">
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">Sid Sir</span><br>
+						<span class="no">7xxxxxxxxx</span><br>
+						<span class="email"></span>
+					</div>
+					</div>
+					</div>
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">xxxxxxxxxx</span><br>
+						<span class="no">xxxxxxxx</span><br>
+						<span class="email">xxxxxxxxxx</span>
+					</div>
+					</div>
+					</div>
+					<div class="card col-md-4 col-xs-12">
+					<div class="box">
+					<div>
+						<span class="name">xxxxxxx</span><br>
+						<span class="no">xxxxxxxx</span><br>
+						<span class="email">xxxxxxxx</span>
+					</div>
+					</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript">
+		$('#trigger-image').click(function(){
+			$('.sidebar').toggleClass('sidebar-open');
+			if($(window).width()>$(window).height())
+			{
+				$('.wrapper').toggleClass('slide-right');
+			}
+		});
+		
+	</script>
+</body>
+</html>

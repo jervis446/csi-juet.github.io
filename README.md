@@ -1,2 +1,3 @@
-# csi-juet.github.io
-Computer Society of India | JUET chapter 
+# Computer Society Of India LNMIIT
+
+website of CSI LNMIIT Student Chapter 

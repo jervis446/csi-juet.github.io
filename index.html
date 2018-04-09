@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>CSI JUET</title>
+	<link rel="shortcut icon" href="resources/csi-favicon.png"  />
+	<meta name="description" content="Computer Society Of India JUET Student Chapter" />
+	<meta name="keywords" content="csi JUET, csi, JUET, Computer Society Of India, Jyapee University of Engineering and Technology" />
+	<meta name="author" content="Shashwat Dixit" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+  	
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/magic.min.css">
+	<link rel="stylesheet" href="css/award.css">
+	<link rel="stylesheet" href="fonts/fonts.css">	
+</head>
+<body>
+
+<!-- csi award -->
+
+<!-- sidebar -->
+
+	<nav class="sidebar">
+		<div class="sb-content">
+			<div id="logo" class="text-center"><img alt="[ CSI JUET ]" title="" src="resources/csi-logo-rr.png" /></div>
+			<a class="active" href="#"><span class="glyphicon glyphicon-home"></span>Home</a>
+			<a href="./about/index.html"><span class="glyphicon glyphicon-user"></span>About</a>
+			<a href="./events/index.html"><span class="glyphicon glyphicon-calendar"></span>Events</a>
+			<a href="./contacts/index.html"><span class="glyphicon glyphicon-envelope"></span>Contacts</a>
+			<a href="./dev.html"><span class="glyphicon glyphicon-user"></span>Developers</a>
+			<a href="http://csi-india.org" target="_blank"><span class="glyphicon glyphicon-link"></span>CSI INDIA</a>
+			<span class="copyright">&copy; CSI JUET 2017-18</span>
+			<a class="fb" href="https://www.facebook.com/CSIJaypee/" target="_blank"><img src="resources/facebook.png"></a>
+		</div>
+		
+		<div id="trigger">
+			<p id="sb-title">csi-JUET</p>
+			<div id="trigger-image">
+				<img src="resources/burger.png">
+			</div>
+		</div>
+	</nav>
+
+	<div class="wrapper">
+		<!-- BackGround Image Slider -->
+		<div class="bg"><!-- 
+			<div class="bg-img1"></div> -->
+			<div class="bg-img2"></div>
+			<div class="bg-img3"></div>
+			<div class="bg-img4"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 content">
+				<div class="force-hv-center">
+					<div class="col-md-12 csi-image">
+						<img src="resources/csi-logo.png" class="img-responsive  force-h-center" style="width:150px;height:150px;">
+					</div>
+					<div class="col-md-12 landing-text">
+						Computer Society Of India
+					</div>
+					<div class="col-md-12 landing-text-2">
+						JUET Student Chapter
+					</div>
+					<div class="col-md-12 btn-group-lg">
+						<a href="./about/index.html"><button class="btn">About Us</button></a>
+						<a href="./events/index.html"><button class="btn">Events</button></a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript">
+		$('#trigger-image').click(function(){
+			$('.sidebar').toggleClass('sidebar-open');
+			if($(window).width() > $(window).height())
+				$('.wrapper').toggleClass('slide-right');
+		});
+		$('#launch-btn').click(function(){
+			$('.launch').css({
+				"top":"-105%"
+			});
+		});		
+		$('#closebtn').click(function(){
+			$('#award-wrapper').css({
+				"top":"-200%"
+			});
+		});
+	</script>
+</body>
+</html>
